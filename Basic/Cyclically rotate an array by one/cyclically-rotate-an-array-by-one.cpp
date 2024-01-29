@@ -31,17 +31,10 @@ int main()
 
 void rotate(int arr[], int n)
 {
-    
-    // Save the last element
-    int lastElement = arr[n - 1];
-
-    // Shift elements to the right by one position
-    for (int i = n - 1; i > 0; i--) {
-        arr[i] = arr[i - 1];
+    int lastelement=arr[n-1];
+    for(int i=n-1;i>0;i--)
+    {
+        arr[i]=arr[i-1];
     }
-
-    // Place the last element at the beginning
-    arr[0] = lastElement;
-
-    
+    arr[0]=lastelement;
 }
