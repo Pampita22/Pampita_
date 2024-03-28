@@ -11,25 +11,10 @@ class Solution
     void sort012(int a[], int n)
     {
         // code here 
-        int mid=0;
-        int start=0;
-        int end=n-1;
-        while(mid<=end)
-        {
-            if(a[mid]==0)
-            {
-                swap(a[mid++],a[start++]);
-            }
-            else if(a[mid]==1)
-            {
-                mid++;
-            }
-            else
-            {
-                swap(a[mid],a[end--]);
-            }
-        }  
-        }
+        
+        sort(a,a+n);
+    }
+    
 };
 
 //{ Driver Code Starts.
