@@ -11,17 +11,18 @@ class Solution{
 public:
     int getPairsCount(int arr[], int n, int k) {
         // code here
-        int cnt=0;
-        unordered_map<int,int>mpp;
+        unordered_map<int,int>ump;
+        int ans=0;
         for(int i=0;i<n;i++){
-            int more=k-arr[i];
-            if(mpp.find(more)!=mpp.end()){
-                cnt+=mpp[more];
+            int diff=k-arr[i];
+            if(ump[diff]){
+                ans += ump[diff];
             }
-            mpp[arr[i]]++;
+            ump[arr[i]]++;
         }
-        return cnt;
+        return ans;
     }
+    
 };
 
 //{ Driver Code Starts.
