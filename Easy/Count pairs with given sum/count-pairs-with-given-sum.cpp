@@ -7,6 +7,7 @@ using namespace std;
 // } Driver Code Ends
 //User function template for C++
 
+
 class Solution{   
 public:
     int getPairsCount(int arr[], int n, int k) {
@@ -22,7 +23,6 @@ public:
         }
         return ans;
     }
-    
 };
 
 //{ Driver Code Starts.
