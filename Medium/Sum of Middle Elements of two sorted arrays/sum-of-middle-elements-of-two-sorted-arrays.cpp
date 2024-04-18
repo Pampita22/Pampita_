@@ -12,24 +12,23 @@ class Solution {
 public:
     int findMidSum(int ar1[], int ar2[], int n) {
             // code here 
-           int i=n-1;
+            int i=n-1;
             int j=0;
-            while(i>=0 && j<n)
+            while(i>=0&&j<n)
             {
                 if(ar1[i]>ar2[j])
                 {
                     swap(ar1[i],ar2[j]);
+                   
                 }
-                i--;
+                 i--;
                 j++;
             }
-            sort(ar1, ar1+n);
-            sort(ar2, ar2+n);
-            int res= ar1[n-1]+ar2[0];
+            sort(ar1,ar1+n);
+            sort(ar2,ar2+n);
+            int res=ar1[n-1]+ar2[0];
             return res;
     }
-      
-    
 };
 
 //{ Driver Code Starts.
