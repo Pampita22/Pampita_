@@ -15,7 +15,6 @@ public:
 	    // Your code goes here
 	    int l=0;
 	    int r=S.length()-1;
-	    
 	    while(l<r)
 	    {
 	        if(S[l]!=S[r])
@@ -27,6 +26,7 @@ public:
 	    }
 	    return 1;
 	}
+
 };
 
 //{ Driver Code Starts.
