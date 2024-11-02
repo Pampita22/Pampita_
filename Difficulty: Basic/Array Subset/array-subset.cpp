@@ -21,7 +21,9 @@ int main() {
         }
 
         cout << isSubset(a1, a2, n, m) << endl;
-    }
+    
+cout << "~" << "\n";
+}
     return 0;
 }
 
@@ -45,13 +47,13 @@ string isSubset(int a1[], int a2[], int n, int m) {
             i++;
         }
     }
-        
-        if(count==m)
-        {
-            return "Yes";
-        }
-        else
-        {
-            return "No";
-        }
+    if(count==m)
+    {
+        return "Yes";
+    }
+    else
+    {
+        return "No";
+    }
+    
 }
