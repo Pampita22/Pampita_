@@ -25,16 +25,16 @@ class Solution {
     int missingNumber(int arr[]) {
         
         // code here
-        int n=arr.length+1;
-        int expectedsum=n*(n+1)/2;
-        int actualsum=0;
-        
-        for(int num:arr)
-        {
-            actualsum+=num;
+       int n=arr.length+1;
+       int expectedsum=n*(n+1)/2;
+       int actualsum=0;
+       
+       for(int num:arr)
+       {
+           actualsum+=num;
            
-        }
-         return expectedsum-actualsum;
+       }
+       return expectedsum-actualsum;
         
     }
 }
